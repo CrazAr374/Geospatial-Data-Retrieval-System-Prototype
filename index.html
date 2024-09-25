@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geospatial Data Retrieval System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Prototype of the Project</h1>
+        <a
+          href="https://github.com/yourusername/your-repo"
+          class="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i> GitHub Repo
+        </a>
+      </div>
+    </header>
+    <main>
+      <section id="query-section" class="card">
+        <h2>Enter Query (as of now city or place)</h2>
+        <textarea
+          id="query-input"
+          placeholder="Enter your geospatial query here..."
+        ></textarea>
+        <button id="submit-query">Show result and information</button>
+      </section>
+      <section id="results-section" class="card">
+        <h2>Result</h2>
+        <div id="results-container"></div>
+        <div id="map-container"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Prototype for actual project</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
